@@ -1,0 +1,270 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: gray;
+}
+
+#top-bar {
+    height: 10%;
+    width: 100%;
+}
+
+nav > button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #000 ;
+    font-weight: 600;
+}
+
+nav {
+    text-align: center;
+    margin: 10px 0;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    
+}
+
+nav button {
+    flex: 1;
+    background-color: #8f8f8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #acacac;
+}
+
+#authorize_button,
+#signout_button {
+    display: none;
+    background-color: #4285F4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#authorize_button:hover,
+#signout_button:hover {
+    background-color: #357AE8;
+}
+
+#signout_button {
+    background-color: #DB4437;
+}
+
+#signout_button:hover {
+    background-color: #C13524;
+}
+
+.task-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    color: #8f8f8f;
+}
+
+#task-form, #task-list, #completed-tasks {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       
+}
+
+#task-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#task-list, #completed-tasks {
+    height: 100vh;
+}
+
+#tasks-container,
+#completed-container {
+    height: 85vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+#task-form label, #task-form input, #task-form textarea, #task-form select, #task-form button, input {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+#task-form button {
+    background-color: #8f8f8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#task-list, #completed-tasks {
+    overflow: hidden;
+}
+
+.task {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+#completed-tasks {
+    margin-top: 20px;
+}
+
+#calendar {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #8f8f8f;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1px;
+}
+
+button:hover{
+    background-color: #acacac;
+}
+
+.close {
+    float:right;
+    padding:2px 5px;
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close:hover {
+  background-color: #d32f2f;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: (0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+
+#edit-task-form {
+    padding: 20px;
+}
+
+#edit-task-form h2 {
+    text-align: center;
+}
+
+#edit-task-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#edit-task-form input,
+#edit-task-form select,
+#edit-task-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#edit-task-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8f8f8f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#edit-task-form button.cancel {
+    background-color: #ccc;
+}
+
+#edit-task-form button:hover {
+    background-color: #acacac;
+}
+
+#edit-task-form button.cancel:hover {
+    background-color: #aaa;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
